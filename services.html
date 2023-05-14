@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #service h2 {
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto 30px auto;
+}
+#service .service--content {
+  display: block;
+}
+
+.dear{
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+  #service .service--content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+#service .service--content .item {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  text-align: center;
+  border: 1px solid #E9EBEC;
+  padding: 20px 10px 40px;
+  margin-bottom: 30px;
+  -webkit-transition: background-color 0.8s ease-in;
+  transition: background-color 0.8s ease-in;
+}
+@media screen and (min-width: 768px) {
+  #service .service--content .item {
+    margin-bottom: 0;
+  }
+}
+#service .service--content .item h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#service .service--content .item img {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+#service .service--content .item p {
+  font-style: italic;
+  display: block;
+  margin-bottom: 30px;
+  text-shadow: 0 1px 2px #222;
+}
+#service .service--content .item a {
+  border: 1px solid #7f53ac;
+  border-radius: 4px;
+  padding: 10px 30px;
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  background-color: #9921e8;
+  background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
+}
+#service .service--content .item a:hover {
+  background-color: #7f5a83;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  border: #0d324d;
+}
+#service .item:hover {
+  background-color: #DEF0FF;
+}
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div id="sidebar" class= "sidebar sidebarGo ">
+
+            <nav>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/intro.html">ABOUT ME</a></li>
+                    <li><a href="/services.html">SERVICES</a></li>
+                    <li><a href="/contact.html">CONTACT</a></li>
+
+
+
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamburger">
+                <img class="ham" src="ham.png" width="23px" alt="">
+                <img class="cross" src="cross.png" width="23px" alt="">
+            </div>
+            <div class="infocontainer">
+
+   
+    <section id="service">
+  <h2 class="dear">Services I offer</h2>
+  <div class="content service--content">
+    <div class="item">
+      <h3>Web Designing</h3>
+      <img src="web.jpg" alt="web design">
+      <p>I can design your websites using HTML,CSS and JavaScript</p>
+      <a href="#contact">Hire Me</a>
+    </div><!-- .item -->
+    <div class="item">
+      <h3>Content writing</h3>
+      <img src="jav.png" alt="content writing">
+      <p>I can write content for your websites</p>
+      <a href="#contact">Hire Me</a>
+    </div><!-- .item -->
+    <div class="item">
+      <h3>Portfolio Design</h3>
+      <img src="https://d3vpszern3jgjo.cloudfront.net/wp-content/uploads/2021/02/Best-free-portfolio-webiste-3.jpg" alt="Portfolio design">
+      <p>I can Make your Portfolio using HTML,CSS and JavaScript</p>
+      <a href="#contact">Hire Me</a>
+    </div><!-- .item -->
+  </div>
+</section><!-- #service -->
+<script src="index.js"></script>
+</body>
+</html>

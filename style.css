@@ -1,0 +1,299 @@
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@400;600&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@400;600&family=Source+Code+Pro:wght@300&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ .sidebar {
+    position:absolute;
+     background-color: rgb(223, 218, 218);
+     width: 434px;
+     font-family: 'Fira Sans', sans-serif;
+     height: 100vh;
+      transition: transform 0.3s ease-in;
+
+ }
+
+ .sidebar nav {
+     padding: 30px;
+     transform: translate(-13px, 0px);
+     position: absolute;
+ }
+
+ .sidebar nav li {
+     list-style: none;
+     font-size: 20px;
+     padding: 33px 0;
+ }
+
+ .sidebar nav li a {
+     text-decoration: none;
+     color: black;
+ }
+
+ .main {
+     /* background-color: yellow; */
+     width: 90vw;
+
+ }
+
+ .container {
+     display: flex;
+ }
+
+ .infocontainer {
+     /* background-color: yellowgreen; */
+     height: 58vh;
+     width: 80vw;
+     margin: 144px auto;
+     display: flex;
+     justify-content: space-around;
+
+ }
+
+ .devinfo {
+    font-size: 16px;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     font-family: 'Source Code Pro', monospace;
+
+ }
+
+ .hello {
+     font-size: 3em;
+     /* margin: 9px; */
+     margin: 0 195px;
+
+ }
+
+ .name {
+    font-size: 3em;
+
+     font-weight: bold;
+     font-family: 'Fira Sans', sans-serif;
+     /* margin: 9px; */
+     margin: 0 195px;
+
+
+
+
+ }
+
+ .about {
+    font-size: 2.5em;
+
+     /* margin: 9px; */
+     margin: 0 195px;
+
+
+
+ }
+
+ .moreabout {
+    font-size: 2em;
+
+     font-family: 'Fira Sans', sans-serif;
+     margin-top: 23px;
+     /* margin: 9px; */
+     margin: 0 195px;
+
+
+ }
+
+ .buttons {
+     margin-top: 34px;
+     margin: 0 195px;
+     font-size: 5px;
+
+ }
+
+ .buttons button {
+     padding: 9px 14px;
+     border-radius: 22px;
+     color: white;
+     background-color: dodgerblue;
+     font-weight: bold;
+     font-size: 2em;
+     margin-top: 3px 3px;
+     cursor: pointer;
+     /* margin: 0 195px; */
+
+ }
+
+ .btn-sm {
+     font-size: 14px;
+     padding: 10px 19px;
+     margin: 3px 0 0;
+
+ }
+
+ .buttons button:hover {
+     background-color: white;
+     color: dodgerblue;
+ }
+
+
+ .devpic img {
+     height: 58vh;
+ }
+
+ .contactform {
+     font-family: 'Fira Sans', sans-serif;
+     padding: 0 34px;
+     padding-top: 144px;
+     margin:  88px;
+
+ }
+
+ .contactform h2 {
+     font-family: 'Source Code Pro', monospace;
+ }
+
+ .contactform div {
+     display: flex;
+     flex-direction: column;
+     border-radius: 5px;
+     padding: 3px;
+
+     /* padding: 10px 0;  */
+ }
+
+ 
+ .contactform div input {
+     /* width: 26vw; */
+     border-radius: 5px;
+     margin: 6px 0 0 0;
+     padding: 3px;
+ }
+ 
+ .contactform form {
+   margin: 0 40px;
+}
+
+
+
+
+ #emailHelp {
+     font-size: 13px;
+     color: midnightblue;
+     margin: 0 5px;
+     padding: 3px 0 0 0;
+ }
+
+ #clientemail {
+     border-radius: 5px;
+     width: 16vw;
+     font-size: 20px;
+
+
+ }
+
+ .forms {
+     width: 300px;
+     height: 50px;
+     padding: 15px;
+     border: 1px solid black;
+ }
+
+ #clientphone {
+     border-radius: 5px;
+     width: 16vw;
+     font-size: 20px;
+ }
+
+ .btn {
+     /* margin: 20px; */
+     /* margin-left: 20px; */
+     width: 105px;
+     margin-top: 15px;
+     color: white;
+     background-color: blue;
+     border-radius: 40px;
+     font-size: larger;
+
+
+ }
+
+
+ .para {
+     font-size: bold;
+     /* color: blue; */
+     padding: 5px;
+     font-weight: bold;
+ }
+
+ .had {
+     padding: 2px;
+     font-size: 30px;
+ }
+
+ .hear {
+     font-weight: bold;
+     /* color: blue; */
+     padding: 5px;
+ }
+
+
+ .sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+ .head {
+     padding: 5px;
+ }
+
+ .hamburger{
+    position:absolute;
+   cursor:pointer;
+    top:10px;
+    left:10px;
+   }
+   .ham{
+    margin-top: 10px;
+    margin-left: 10px;
+   }
+   .cross{
+    margin-left: 184px;
+    margin-top:10px ;
+   
+   }
+
+   .bad{
+    border-radius: 8px;
+
+        /* border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+        filter: grayscale(100%);
+align-items: center; */
+      }
+
+      .dear{
+        text-align: center;
+      }
+      
+  
+   
+ 
+ @media(max-width:978px) {
+   .devpic{
+    display: none;
+   }
+  
+  
+ .buttons{
+    font-size: 6px;
+ }
+
+ .devinfo{
+    font-size: 10px;
+ }
+}
+
+
+
